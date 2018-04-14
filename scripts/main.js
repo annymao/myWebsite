@@ -15,9 +15,10 @@
 ga('create', 'UA-117489583-1', 'auto');
 ga('send', 'pageview');
 
-window.onload() {
-  var feedbackBTN = document.getElementByID("feedback");
+window.onload = function () {
+  var feedbackBTN = document.getElementById("feedback");
   feedbackBTN.addEventListener('click', function () {
     ga('send', 'event', 'onlineshow', 'click', 'question');
+    console.log("isClicked");
   });
 }
